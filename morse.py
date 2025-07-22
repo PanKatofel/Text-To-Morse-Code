@@ -59,3 +59,11 @@ def decode(morse: Morse) -> str:
             raise ValueError(f"Unknown Morse code: {code}")
 
     return text
+
+
+print(f"Input: Hello\n")
+
+morse_value = encode("Hello")
+print(f"Morse: {morse_value}")
+decoded_value = decode(morse_value)
+print(f"Decoded Value: {decoded_value}")
